@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变形动画</title>
+    <link rel="stylesheet" href="./css/translate.css" />
+</head>
+<body>
+    <div class="container">
+        <section class="demo-section">
+            <h3>变形叠加</h3>
+            <p>下面设置了两次移动，并不会移动 550px 而是只移动50px</p>
+            <div class="demo01"></div>
+        </section>
+
+        <section class="demo-section">
+            <h3>伪类叠加</h3>
+            <div class="demo02"></div>
+        </section>
+
+        <section class="demo-section">
+            <h3>行内元素</h3>
+            <p>行内元素不产生变形效果，将其转为 inline-block 或 block 以及弹性元素时都可以产生变化效果</p>
+            <span class="demo03">hdcms</span>
+        </section>
+
+        <section class="demo-section">
+            <h3>:target</h3>
+            <article class="demo04">
+                <div>
+                    <a href="#hdcms">hdcms</a>
+                    <aside id="hdcms">内容管理系统</aside>
+                </div>
+                <div>
+                    <a href="#houdunren">houdunren</a>
+                    <aside id="houdunren">在线社区</aside>
+                </div>
+            </article>
+        </section>
+
+        <section class="demo-section">
+            <h3>translateX</h3>
+            <p>正值向右移动、负值向左移动</p>
+            <article class="demo05">
+                <div></div>
+                <div></div>
+            </article>
+        </section>
+
+        <section class="demo-section">
+            <h3>translateY</h3>
+            <p>正值向下移动、负值向上移动</p>
+            <article class="demo06">
+                <div></div>
+                <div></div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

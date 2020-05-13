@@ -1,0 +1,10 @@
+.demo01 {
+    transform: translateX(500px);
+    width: 100px;
+    height: 100px;
+    background: #9b59b6;
+}
+
+.demo01:nth-child(1) {
+    transform: translateX(50px);
+}
