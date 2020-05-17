@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	background-color: #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation-name: background, rotate;
+	animation-duration: 4s, 2s;
+	animation-fill-mode: forwards;
+}
+
+main::before {
+	content: 'Lalio';
+	color: #fff;
+	font-size: 32px;
+	transform: scale(0);
+	animation-name: opacity;
+	animation-delay: 3s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes background {
+	25% {
+		background-color: #ff0;
+	}
+	50% {
+		background-color: #f0f;
+	}
+	75% {
+		background-color: #00f;
+	}
+}
+
+@keyframes rotate {
+	25% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes opacity {
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}

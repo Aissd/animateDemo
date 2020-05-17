@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>摩天轮动画</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: url(./img/bg.png) no-repeat center;
+			height: 100vh;
+		}
+		.ferris-wheel {
+		    width: 768px;
+			height: 100%;
+    		margin: 0 auto;
+		    position: relative;
+		    background: url(./img/fsw.png) no-repeat center;
+		    background-size: contain;
+		    animation: ferris 15s linear infinite forwards; 
+		}
+		.ferris-wheel > div {
+			width: 130px;
+			height: 170px;
+			position: absolute;
+			animation: children 15s linear infinite;
+		}
+		.pic-01 {
+    		top: 0;
+    		left: 310px;
+			background: url(./img/boy.png) no-repeat center;
+		    background-size: contain;
+		}
+		.pic-02 {
+    		top: 240px;
+		    left: 0;
+			background: url(./img/girl.png) no-repeat center;
+		    background-size: contain;
+		}
+		.pic-03 {
+    		top: 240px;
+		    right: 0;
+			background: url(./img/shamegirl.png) no-repeat center;
+		    background-size: contain;
+		}
+		@keyframes ferris {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes children {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(-360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="ferris-wheel">
+		<div class="pic-01"></div>
+		<div class="pic-02"></div>
+		<div class="pic-03"></div>
+	</div>
+</body>
+</html>

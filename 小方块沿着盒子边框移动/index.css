@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	width: 400px;
+	height: 400px;
+	background: #00f;
+	border: 1px solid #ddd;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	background: #f00;
+	animation-name: move;
+	animation-duration: 3s;
+}
+
+@keyframes move {
+	25% {
+		transform: translateX(300px);
+	}
+	50% {
+		transform: translate(300px, 300px);
+	}
+	75% {
+		transform: translateY(300px);
+	}
+}

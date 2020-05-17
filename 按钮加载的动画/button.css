@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: #ddd;
+	display: grid;
+	grid-template: 1fr/1fr;
+}
+
+button {
+	width: 200px;
+	height: 60px;
+	background: #aaa;
+	color: #fff;
+	justify-self: center;
+	align-self: center;
+	border: 1px solid #f00;
+}
+
+button:after {
+	content: '';
+	width: 3px;
+	height: 3px;
+	display: inline-block;
+	animation-name: loading;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+}
+
+@keyframes loading {
+	25% {
+		box-shadow: 3px 0 currentColor;
+	}
+	50% {
+		box-shadow: 3px 0 currentColor, 9px 0 currentColor;
+	}
+	75% {
+		box-shadow: 3px 0 currentColor, 9px 0 currentColor, 15px 0 currentColor;
+	}
+}
